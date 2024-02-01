@@ -1,8 +1,35 @@
 // 1. Create a function called greet that takes a name as an argument and returns a greeting message with a sign of exclamation at the end of the name.For example: greet(“Alan”) returns “Welcome Alan!”.Call the function with different names to test it.
 
+function greet(name) {
+  // return `Welcome ${name}!`;
+  return "Welcome " + name + "!";
+}
+console.log(greet("Dedrick"));
+
+let greet=(name) => {`Welcome ${name}!`};
+console.log(greet("Golden"));
+
+let greet = function(name) {
+  return `Welcome ${name}!`;
+};
+console.log(greet("Dedrick"));
 // 2. Modify the above greet function to have default parameter for name, so it provides a generic greeting if no name is provided. [You may want to write more shapes of greet function using other techniques to handle missing arguments (as discussed in class)]
 
+function greet(name) {
+    if (name) {
+        return `Welcome ${name}!`;
+    } else {
+        return "You are Welcome!";
+    }
+}
+
+
 // 3. Write a function called calculateArea that takes the radius of a circle as a parameter and returns the area. You might want to use Math object with PI value (like Math.PI)For example: calculateArea(5) returns the area by putting 5 as radius value.
+
+function calculateArea(radius) {
+  return Math.PI * radius * radius;
+}
+console.log(calculateArea(5));
 
 // 4. Declare a variable called multiply and assign an anonymous function that multiplies two numbers. Use this variable to perform multiplication.
 
